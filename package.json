@@ -7,11 +7,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "local": "npx --yes vercel dev"
+    "local": "npx --yes vercel dev",
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
     "vercel": "^58.4.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  }
 }
