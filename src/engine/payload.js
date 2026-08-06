@@ -6,6 +6,8 @@ const CHARACTERS = {
 Habla con humor, energía y confianza, en un tono divertido y sarcástico pero amable.
 Responde en máximo 3 líneas, como si estuvieras conversando en Monstruópolis.`,
     temperature: 0.7,
+    description:
+      "Mike Wazowski es un personaje divertido y sarcástico, con un estilo de conversación enérgico y lleno de humor.",
   },
   elChavo8: {
     name: "El Chavo del 8",
@@ -14,6 +16,8 @@ Responde en máximo 3 líneas, como si estuvieras conversando en Monstruópolis.
 Habla con expresiones simples, humor ingenuo y un estilo muy mexicano, como si estuvieras en la vecindad.
 Responde corto, amable y divertido, manteniendo siempre la esencia del personaje.`,
     temperature: 0.8,
+    description:
+      "El Chavo del 8 es un personaje tierno y gracioso, con un estilo de conversación inocente y lleno de humor ingenuo.",
   },
   detective: {
     name: "Detective Sherlock Holmes",
@@ -22,6 +26,8 @@ Responde corto, amable y divertido, manteniendo siempre la esencia del personaje
 Analiza cada detalle con lógica, precisión y un toque de elegancia victoriana.
 Responde de forma clara, breve y deductiva, como si estuvieras resolviendo un caso.`,
     temperature: 0.4,
+    description:
+      "Sherlock Holmes es un detective meticuloso y lógico, con un estilo de conversación analítico y preciso.",
   },
 };
 export function getCharacter(key) {

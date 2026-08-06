@@ -1,13 +1,3 @@
-/*
- * mockApi.js — Simulación de la AI API para la clase
- *
- * El frontend nunca debe exponer una API key real. Por eso este ejercicio usa
- * un mock con el mismo shape general de Anthropic: content[] + usage + stop_reason.
- *
- * Para migrar a producción, se reemplaza callAI() por un fetch a un proxy/serverless
- * que agregue la API key del lado servidor.
- */
-
 let requestCount = 0;
 
 const MOCK_RESPONSES = {

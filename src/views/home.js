@@ -7,14 +7,20 @@ const THEMES = {
   mikeWazowski: {
     gradient: "linear-gradient(135deg, #4b5563, #1f2937)",
     accent: "#9ca3af",
+    cardBg: "linear-gradient(145deg, #71f378, #30e053)",
+    cardText: "#043007",
   },
   elChavo8: {
     gradient: "linear-gradient(135deg, #6b7280, #374151)",
     accent: "#cbd5e1",
+    cardBg: "linear-gradient(145deg, #fdf0d8, #f6d6a2)",
+    cardText: "#5a4017",
   },
   detective: {
     gradient: "linear-gradient(135deg, #52525b, #27272a)",
     accent: "#d1d5db",
+    cardBg: "linear-gradient(145deg, #eef3ff, #d8e4ff)",
+    cardText: "#31415a",
   },
 };
 
@@ -84,12 +90,12 @@ function renderCard(key) {
   const theme = THEMES[key];
 
   return `
-    <div class="home-card" data-character="${key}" style="--card-gradient: ${theme.gradient}; --card-accent: ${theme.accent}">
+    <div class="home-card" data-character="${key}" style="--card-gradient: ${theme.gradient}; --card-accent: ${theme.accent}; --card-bg: ${theme.cardBg}; --card-text: ${theme.cardText};">
       <div class="home-card__header">
         <span class="home-card__avatar">${char.avatar}</span>
         <h2 class="home-card__name">${char.name}</h2>
       </div>
-      <p class="home-card__desc">${char.system.slice(0, 120)}...</p>
+      <p class="home-card__desc">${char.description.slice(0, 140)}...</p>
       <div class="home-card__action-wrap">
         <button class="home-card__button" type="button">Chatear</button>
       </div>
